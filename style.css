@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  width: auto;
+  height: 13rem;
+  background-color: aqua;
+  /* display: inline-block; */
+}
+img {
+  width: 7rem;
+  height: 9rem;
+  margin-top: 2rem;
+  margin-left: 20rem;
+}
+
+
+  
