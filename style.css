@@ -6,20 +6,45 @@
 
 html {
   font-size: 62.5%;
+  
 }
 
-header {
+body {
+  background-color: #0a1417 ;
+  
+}
+
+.header {
   width: auto;
   height: 13rem;
-  background-color: aqua;
+  /* background-color: aqua; */
   /* display: inline-block; */
 }
-img {
-  width: 7rem;
+.figure__img--logo-platzi {
+  width: 20rem;
   height: 9rem;
   margin-top: 2rem;
   margin-left: 20rem;
 }
+
+.header__menu {
+  margin-right: 30 px;
+}
+
+.header__menu ul {
+  /* display: none; */
+  list-style: none;
+  position: absolute;
+  text-align: right;
+  margin: 0px 0px 0px -14px;
+}
+
+.header__menu--profile {
+  margin-right: 8px;
+  width: 40px;
+}
+
+
 
 
   
