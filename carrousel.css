@@ -37,7 +37,7 @@ body {
 
     */
 
-.carousel__item {
+.carousel-item {
   background-color: palevioletred;
   width: 200px;
   height: 250px;
@@ -48,6 +48,7 @@ body {
   cursor: pointer;
   transition: 450ms all;
   transform-origin: center left;
+  position: relative;
 }
 
 /*
@@ -57,15 +58,36 @@ body {
         3.-
     */
 
-.carousel__item:hover ~ .carousel__item{
+.carousel-item:hover ~ .carousel-item{
   transform: translate3d(100px, 0, 0);
 }
 
-.carousel__container:hover .carousel__item {
+.carousel__container:hover .carousel-item {
   opacity: 0.3; /*Opacidad al 30%*/
 }
 
-.carousel__container:hover .carousel__item:hover {
+.carousel__container:hover .carousel-item:hover {
   transform: scale(1.5); /*Agranda la imagen un 50%*/
   opacity: 1; /*sin opacidad*/
+}
+
+.carousel-item__img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;/*pone la imagen como debe ser, se ve bien*/
+}
+
+.carousel-item__details {
+  /*Generamos gradiente desde color transparente a color más oscuro*/
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
 }
