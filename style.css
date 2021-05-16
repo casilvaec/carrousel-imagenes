@@ -107,5 +107,56 @@ body {
   color: white;
 }
 
+.login {
+  background: linear-gradient(#1eae98, #aa2ee6);
+  display: flex;
+  align-items: center; /*alineación vertical*/
+  justify-content: center; /*alienación horizontal*/
+  flex-direction: colum;/*elementos se colocan de arriba a abajo*/
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);/*Cálculo en base a los que está viend el usuario*/
 
+}
+
+.login__container {
+  background-color: rgba(255, 255, 255, 0.1);/*color más claro que el fondo*/
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  padding: 60 px 68 px 40 px;
+  min-height: 700px;
+  width: 300px;
+}
   
+.login__container--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__container--form label {
+  font-size: 14px;
+}
+
+.login__container--remember-me {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login__container--remember-me a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login__container--remember-me a:hover {
+  text-decoration: underline;
+}
+
+.login__container--social-media > div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
